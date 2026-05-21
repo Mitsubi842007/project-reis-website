@@ -33,7 +33,13 @@
   </div>
   <!--reserveringsformulier -->
   <!--kleine informatie balkjes -->
-  <!--footer -->
+<!--footer -->
+  <footer>
+    <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
+    <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
+  </footer>
+  </div>
+
 </body>
 
 </html>
