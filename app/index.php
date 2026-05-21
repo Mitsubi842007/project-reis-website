@@ -9,15 +9,15 @@
 </head>
 
 <body>
-<script>
+  <script>
 
 
 
-</script>
+  </script>
   <!--navigation menu-->
   <nav class="navbar">
-    <div class="logo">
-      <div class="logo-icon"></div>
+    <div class="brandName">
+      <img src="afbeeldingen/palm boom logo.png">
       <h2>TungSahara</h2>
     </div>
     <div class="nav-menu">
@@ -30,52 +30,62 @@
   <!--front background-->
   <div class="darkBackground">
     <h1>
-Beleef de Magie van de Sahara</h1>
+      Beleef de Magie van de Sahara</h1>
     <p>Ontdek de adembenemende schoonheid van de woestijn op een onvergetelijke kamelentocht</p>
     <a href="boeking.php" class="booking-btn">boek nu je avontuur</a>
-</div>
-<!--waarom tungSahara -->
-<div class="whiteBackground">
+  </div>
+  <!--waarom tungSahara -->
+  <div class="whiteBackground">
     <h1>Waarom TungSahara?</h1>
 
     <div class="features">
 
-        <div class="card">
-            <div class="imagePictogram1">📍</div>
-            <h2>Authentieke Routes</h2>
-            <p>
-                Ontdek verborgen oases en traditionele Berberdorpen langs routes
-                die al eeuwenlang worden gebruikt
-            </p>
+      <div class="card">
+        <div class="imagePictogram1">
+          <img src="afbeeldingen/locatie pictogram.png" alt="Locatie pictogram">
         </div>
+        <h2>Authentieke Routes</h2>
+        <p>
+          Ontdek verborgen oases en traditionele Berberdorpen langs routes
+          die al eeuwenlang worden gebruikt
+        </p>
+      </div>
 
-        <div class="card">
-            <div class="imagePictogram1">👥</div>
-            <h2>Ervaren Gidsen</h2>
-            <p>
-                Onze lokale gidsen kennen de woestijn als hun broekzak en delen
-                graag hun verhalen en kennis
-            </p>
+      <div class="card">
+        <div class="imagePictogram1">
+          <img src="afbeeldingen/locatie pictogram.png" alt="Locatie pictogram">
         </div>
+        <h2>Ervaren Gidsen</h2>
+        <p>
+          Onze lokale gidsen kennen de woestijn als hun broekzak en delen
+          graag hun verhalen en kennis
+        </p>
+      </div>
 
-        <div class="card">
-            <div class="imagePictogram1"><img src="" alt="alternatetext">
-            <h2>Flexibele Opties</h2> 
-            <p>
-                Kies uit dagtrips, meerdaagse expedities of op maat gemaakte
-                avonturen die bij je schema passen
-            </p>
+      <div class="card">
+        <div class="imagePictogram1">
+          <img src="afbeeldingen/locatie pictogram.png" alt="Locatie pictogram">
         </div>
-
+        <h2>Flexibele Opties</h2>
+        <p>
+          Kies uit dagtrips, meerdaagse expedities of op maat gemaakte
+          avonturen die bij je schema passen
+        </p>
+      </div>
     </div>
-</div>
-<!--klaar voor het avontuur -->
-<!--footer -->
-<footer>
-<p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
-</footer>
+
   </div>
-  
+  <!--klaar voor het avontuur -->
+  <div class="blueBackground">
+    
+
+  </div>
+  <!--footer -->
+  <footer>
+    <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
+  </footer>
+  </div>
+
 </body>
 
 </html>
