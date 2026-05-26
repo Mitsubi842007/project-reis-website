@@ -9,20 +9,20 @@ body {
   font-family: "futurama", sans-serif;
   /*menu */
 }
- 
+
 .brandName {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
   font-size: 16px;
   font-weight: 300;
   color: white;
- 
- 
- 
+
+
+
 }
 .brandName img {
   width: 60px;
@@ -35,8 +35,8 @@ body {
   font-weight: 500;
  margin-top: 20px;
 }
- 
- 
+
+
 footer {
   width: 100%;
   max-width: 100%;
@@ -51,7 +51,7 @@ footer {
   color: white;
   column-count: 2;
 }
- 
+
 footer p {
   font-size: 15px;
   font-weight: 500;
@@ -155,20 +155,20 @@ footer p {
   color: white;
   column-count: 3;
 }
- 
+
 .darkBackground h1 {
   font-size: 62px;
   font-weight: 500;
   margin-bottom: 15px;
 }
- 
+
 .darkBackground p {
   font-size: 25px;
   font-weight: 400;
   width: 80%;
   text-align: center;
 }
- 
+
 .booking-btn {
   background-color: #b8971d;
   color: #ffffff;
@@ -189,7 +189,7 @@ footer p {
   color: white;
   transform: translateY(-2px);
 }
- 
+
 /*background 2 (white) */
 .whiteBackground {
   width: 100%;
@@ -198,23 +198,23 @@ footer p {
   text-align: center;
   padding-top: 50px;
 }
- 
+
 .whiteBackground h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 70px;
 }
- 
+
 .features {
   display: flex;
   justify-content: center;
   gap: 100px;
 }
- 
+
 .card {
   width: 300px;
 }
- 
+
 .imagePictogram1 {
   width: 100px;
   height: 100px;
@@ -228,24 +228,24 @@ footer p {
   margin: auto;
   margin-bottom: 30px;
 }
- 
+
 .imagePictogram1 img {
   width: 220px;
   height: 220px;
   object-fit: cover;
   border-radius: 50%;
 }
- 
+
 .card h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
- 
+
 .card p {
   font-size: 17px;
   line-height: 1.6;
 }
- 
+
 /*background 3 (blue) */
 .blueBackground {
   display: flex;
@@ -260,26 +260,26 @@ footer p {
   color: white;
   column-count: 3;
 }
- 
+
 /*informatie (only the page)*/
- 
- 
+
+
 /*boeking (only the page)*/
 /*login (only the page)*/
 /*admin (only the page)*/
 /*algemene voorwaarden (only the page)*/
- 
+
 .conditions-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 40px;
   background-color: white;
 }
- 
+
 .conditions-section {
   margin-bottom: 40px;
 }
- 
+
 .conditions-section h2 {
   color: #b8971d;
   font-size: 24px;
@@ -287,26 +287,26 @@ footer p {
   border-bottom: 2px solid #b89417;
   padding-bottom: 10px;
 }
- 
+
 .conditions-section p {
   color: #333;
   line-height: 1.8;
   margin-bottom: 15px;
   font-size: 15px;
 }
- 
+
 .conditions-section ul {
   margin-left: 20px;
   margin-bottom: 15px;
 }
- 
+
 .conditions-section li {
   color: #333;
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 15px;
 }
- 
+
 .highlight {
   background-color: #e9ea89;
   padding: 15px;
@@ -314,7 +314,7 @@ footer p {
   margin: 20px 0;
   border-radius: 4px;
 }
- 
+
 .header-conditions {
   background-color: #b8971d;
   color: white;
@@ -322,17 +322,17 @@ footer p {
   text-align: center;
   margin-bottom: 30px;
 }
- 
+
 .header-conditions h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
- 
+
 .header-conditions p {
   font-size: 16px;
   opacity: 0.95;
 }
- 
+
 .back-button {
   display: inline-block;
   background-color: #b8971d;

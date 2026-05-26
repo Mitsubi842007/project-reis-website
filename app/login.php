@@ -7,6 +7,11 @@
    <link rel="stylesheet" href="reisbureau.css">
 </head>
   <body>
+    <script>
+
+
+  
+</script>
     <!--navigation menu -->
     <nav class="navbar">
       <div class="logo">
@@ -22,5 +27,12 @@
     </nav>
 <!--log in form -->
 <!--footer -->
-  </body>
-  </html>
+  <footer>
+    <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
+    <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
+  </footer>
+  </div>
+
+</body>
+
+</html>
