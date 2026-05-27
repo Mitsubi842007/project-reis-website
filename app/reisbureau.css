@@ -266,6 +266,85 @@ footer p {
 
 /*boeking (only the page)*/
 /*login (only the page)*/
+body {
+ background-color: #7a9a8a;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: Arial, sans-serif;
+ }
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+ }
+
+.logo {
+  background-color: #b8952a;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  margin: 0 auto 20px;
+}
+
+ h1 {
+  margin-bottom: 8px;
+  }
+
+ p {
+  color: gray;
+  margin-bottom: 20px;
+    }
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  }
+
+.rij {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+ }
+
+.rij a {
+  color: #b8952a;
+  text-decoration: none;
+  }
+
+ button {
+  width: 100%;
+  padding: 12px;
+  background-color: #b8952a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  }
+
+.onderaan a {
+ color: #b8952a;
+ text-decoration: none;
+ }
 /*admin (only the page)*/
 /*algemene voorwaarden (only the page)*/
 
