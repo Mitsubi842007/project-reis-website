@@ -40,7 +40,6 @@
       reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in authentieke
       Berbertenten.</p>
   </div>
-  <!-- Info cards -->
   <div class="info-cards">
     <div class="info-card">
       <div class="info-icon">
