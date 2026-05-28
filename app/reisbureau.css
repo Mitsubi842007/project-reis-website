@@ -298,17 +298,7 @@ footer p {
   font-size: 15px;
 }
 
-.rij {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
 
-.rij a {
-  color: #b8952a;
-  text-decoration: none;
-}
 
 .login-card button {
   width: 100%;

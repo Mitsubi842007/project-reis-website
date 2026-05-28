@@ -25,7 +25,7 @@
   <!-- login -->
   <div class="login-wrapper">
     <div class="login-card">
-      <div class="login-logo">🌴</div>
+      
 
       <h1>Welkom Terug</h1>
       <p>Log in om je boekingen te beheren</p>
@@ -36,14 +36,11 @@
       <label for="wachtwoord">Wachtwoord</label>
       <input type="password" id="wachtwoord" />
 
-      <div class="rij">
-        <label><input type="checkbox" checked /> Onthoud mij</label>
-        <a href="#">Wachtwoord vergeten?</a>
-      </div>
-
+      
+      
       <button>Inloggen</button>
-
-      <p class="onderaan">Nog geen account? <a href="#">Registreer hier</a></p>
+<p class="onderaan">Login met admin <a href="#">Klik hier</a></p>
+      
     </div>
   </div>
 
