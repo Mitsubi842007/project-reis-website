@@ -81,8 +81,7 @@
       </div>
     </div>
   </div>
-  <!--belangrijke stopmomenten -->
-  <!--wat te verwachten -->
+  
   <!--footer -->
   <footer>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>

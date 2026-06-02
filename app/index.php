@@ -80,7 +80,7 @@
     <h1>Klaar voor het Avontuur?</h1>
     <p>Laat je meevoeren door de rust en schoonheid van de Sahara. Boek vandaag nog je reis.</p>
     <a href="informatie.php" class="info-btn">meer informatie</a>
-</div>
+  </div>
 
   </div>
   </div>

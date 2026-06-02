@@ -335,7 +335,6 @@ footer p {
  
 }
 
-/* Info cards (informatie.php) */
 .info-cards {
   max-width: 1100px;
   margin: 40px auto 60px;
@@ -401,24 +400,176 @@ footer p {
     margin-right: 0;
   }
 }
+.bookNow {
 
-
-
-
-
-
-
-
-
-
-
+  
+}
 
 
 
 
 /*boeking (only the page)*/
-/*login (only the page)*/
+
+
+
+/* LOGIN */
+.login-wrapper {
+  background-color: #7a9a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+  padding: 40px 0;
+}
+ 
+.login-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+ 
+.login-logo {
+  background-color: #b8952a;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  margin: 0 auto 20px;
+}
+ 
+.login-card h1 {
+  margin-bottom: 8px;
+}
+ 
+.login-card p {
+  color: gray;
+  margin-bottom: 20px;
+}
+ 
+.login-card label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ 
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  font-size: 15px;
+}
+ 
+ 
+ 
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #b8952a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+ 
+.onderaan a {
+  color: #b8952a;
+  text-decoration: none;
+}
+ 
+/* ADMIN */
+ 
+
+
+/* ALGEMENE VOORWAARDEN */
+.conditions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: white;
+}
+ 
+.conditions-section {
+  margin-bottom: 40px;
+}
+ 
+.conditions-section h2 {
+  color: #b8971d;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b89417;
+  padding-bottom: 10px;
+}
+ 
+.conditions-section p {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+ 
+.conditions-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+ 
+.conditions-section li {
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+ 
+.highlight {
+  background-color: #e9ea89;
+  padding: 15px;
+  border-left: 4px solid #b8971d;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+ 
+.header-conditions {
+  background-color: #b8971d;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+.header-conditions h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+ 
+.header-conditions p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+ 
+.back-button {
+  display: inline-block;
+  background-color: #b8971d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
 /*admin (only the page)*/
+
+
+
+
+
 /*algemene voorwaarden (only the page)*/
 .conditions-container {
   max-width: 900px;
