@@ -335,7 +335,6 @@ footer p {
  
 }
 
-/* Info cards (informatie.php) */
 .info-cards {
   max-width: 1100px;
   margin: 40px auto 60px;
@@ -401,17 +400,10 @@ footer p {
     margin-right: 0;
   }
 }
+.bookNow {
 
-
-
-
-
-
-
-
-
-
-
+  
+}
 
 
 
