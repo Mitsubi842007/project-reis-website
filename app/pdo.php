@@ -16,5 +16,5 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 try {
     $pdo = new PDO($dsn, $email, $password,);
 } catch (PDOException $e) {
-    die("Unable to connect to the database.");
+    die("kan de database niet connecten");
 }
