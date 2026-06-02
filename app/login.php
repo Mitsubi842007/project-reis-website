@@ -12,19 +12,21 @@
 
   
 </script>
-    <!--navigation menu -->
-    <nav class="navbar">
-      <div class="logo">
-        <div class="logo-icon"></div>
-        <h2>TungSahara</h2>
-      </div>
-      <div class="nav-menu">
-        <a href="index.php">Home</a>
-        <a href="informatie.php">Information</a>
-        <a href="boeking.php">Booking</a>
-        <a href="login.php" class="login-btn" class="active">Login</a>
-      </div>
-    </nav>
+   <!--navigation menu-->
+  <nav class="navbar">
+    <div class="brandName">
+      <img src="afbeeldingen/palm boom logo.png">
+      <h2>TungSahara</h2>
+    </div>
+    <div class="nav-menu">
+      <a href="index.php">Home</a>
+      <a href="informatie.php">Information</a>
+      <a href="boeking.php">Booking</a>
+      <a href="login.php" class="login-btn ">Login</a>
+    </div>
+  </nav>
+  <!--achtergrond -->
+ 
 <!--log in form -->
 <!--footer -->
   <footer>
