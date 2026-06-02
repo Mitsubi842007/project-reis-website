@@ -42,7 +42,7 @@ body {
 footer {
   max-width: 100%;
   max-width: 100%;
-  max-height: 80px;
+  height: 80px;
   max-height: 80px;
   background-color: #b8971d;
 
@@ -61,8 +61,8 @@ footer p {
 
 /* NAVBAR (gloabl) */
 .navbar {
-  max-width: 100%;
-  max-height: 80px;
+  width: 100%;
+  height: 80px;
   background-color: #b8971d;
 
   display: flex;
@@ -76,7 +76,7 @@ footer p {
 .nav-menu {
   display: flex;
   align-items: center;
- gap: 45px;
+  gap: 45px;
 }
 
 .nav-menu a {
@@ -151,9 +151,9 @@ footer p {
   justify-content: center;
   align-items: center;
   align-content: center;
- max-width: 100%;
+  width: 100%;
   background-color: black;
- max-height: 550px;
+  height: 550px;
   color: white;
   column-count: 3;
 }
@@ -167,7 +167,7 @@ footer p {
 .darkBackground p {
   font-size: 25px;
   font-weight: 400;
-  max-width: 80%;
+  width: 80%;
   text-align: center;
 }
 
@@ -194,8 +194,8 @@ footer p {
 
 /*background 2 (white) */
 .whiteBackground {
-  max-width: 100%;
-  max-height: 500px;
+  width: 100%;
+  height: 500px;
   background-color: #f4f4f4;
   text-align: center;
   padding-top: 50px;
@@ -224,12 +224,12 @@ footer p {
 }
 
 .card {
-  max-width: 300px;
+  width: 300px;
 }
 
 .imagePictogram1 {
-  max-width: 100px;
-  max-height: 100px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -242,8 +242,8 @@ footer p {
 }
 
 .imagePictogram1 img {
-max-width: 220px;
-  max-height: 220px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -268,7 +268,7 @@ max-width: 220px;
   align-content: center;
   width: 100%;
   background-color: #2181b7;
-  max-height: 350px;
+  height: 350px;
   color: white;
   column-count: 3;
 }
@@ -282,7 +282,7 @@ max-width: 220px;
 .blueBackground p {
   font-size: 20px;
   font-weight: 400;
-  max-width: 80%;
+  width: 80%;
   text-align: center;
 }
 
@@ -309,8 +309,8 @@ max-width: 220px;
 
 /*informatie (only the page)*/
 .whiteBackground2 {
-  max-width: 100%;
-  max-height: 350px;
+  width: 100%;
+  height: 350px;
   background-color: #ffffff;
   text-align: center;
   padding-top: 50px;
@@ -321,7 +321,7 @@ max-width: 220px;
   color: #787676;
   font-size: 18px;
   font-weight: 200;
-  max-width: 50%;
+  width: 50%;
   margin: auto;
   margin-bottom: 50px;
   line-height: 1.5;
@@ -356,8 +356,8 @@ max-width: 220px;
 }
 
 .info-icon {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   flex: 0 0 80px;
   display: flex;
   align-items: center;
@@ -365,8 +365,8 @@ max-width: 220px;
 }
 
 .info-icon img {
-  max-width: 64px;
-  max-height: 64px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 
@@ -424,15 +424,15 @@ max-width: 220px;
   background-color: white;
   border-radius: 20px;
   padding: 40px;
-  max-width: 350px;
+  width: 350px;
   text-align: center;
 }
 
 .login-logo {
   background-color: #b8952a;
   border-radius: 50%;
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
   font-size: 30px;
   line-height: 70px;
   margin: 0 auto 20px;
@@ -455,7 +455,7 @@ max-width: 220px;
 }
 
 .login-card input {
-  max-width: 100%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: none;
@@ -467,7 +467,7 @@ max-width: 220px;
 
 
 .login-card button {
-  max-width: 100%;
+  width: 100%;
   padding: 12px;
   background-color: #b8952a;
   color: white;
