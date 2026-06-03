@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log in</title>
-    <link rel="stylesheet" href="reisbureau.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>log in</title>
+  <link rel="stylesheet" href="reisbureau.css">
 </head>
+
 <body>
- 
+
   <!-- navigatie -->
   <nav class="navbar">
     <div class="brandName">
@@ -21,34 +23,35 @@
       <a href="login.php" class="login-btn active">Login</a>
     </div>
   </nav>
- 
+
   <!-- login -->
   <div class="login-wrapper">
     <div class="login-card">
-     
- 
+
+
       <h1>Welkom Terug</h1>
       <p>Log in om je boekingen te beheren</p>
- 
+
       <label for="email">E-mailadres</label>
       <input type="email" id="email" placeholder="jouw@email.nl" />
- 
+
       <label for="wachtwoord">Wachtwoord</label>
       <input type="password" id="wachtwoord" />
- 
-     
-     
+
+
+
       <button>Inloggen</button>
-<p class="onderaan">Login met admin <a href="#">Klik hier</a></p>
-     
+      <p class="onderaan">Login met admin <a href="#">Klik hier</a></p>
+
     </div>
   </div>
- 
+
   <!-- footer -->
   <footer>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
- 
+
 </body>
+
 </html>
