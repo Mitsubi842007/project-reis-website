@@ -644,3 +644,36 @@ footer p {
   font-size: 16px;
   margin-top: 20px;
 }
+
+/*pagina lader*/
+#page-loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(11, 10, 18, 0.9);
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#page-loader.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-ring {
+  width: 80px;
+  height: 80px;
+  border: 8px solid rgba(255, 255, 255, 0.18);
+  border-top-color: #e9ea89;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -51,6 +51,7 @@
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
+  <script src="script.js"></script>
 
 </body>
 
