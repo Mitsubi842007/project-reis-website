@@ -19,7 +19,7 @@ body {
   align-content: stretch;
   font-size: 16px;
   font-weight: 300;
-  color: white;
+  color: #ffffff;
 
 
 
@@ -81,7 +81,7 @@ footer p {
 
 .nav-menu a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 
   font-size: 18px;
   font-weight: 500;
@@ -100,7 +100,7 @@ footer p {
   width: 100%;
   height: 2px;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /* LOGIN BUTTON */
@@ -152,9 +152,9 @@ footer p {
   align-items: center;
   align-content: center;
   width: 100%;
-  background-color: black;
+  background-color: #000000;
   height: 550px;
-  color: white;
+  color: #ffffff;
   column-count: 3;
 }
 
@@ -269,7 +269,7 @@ footer p {
   width: 100%;
   background-color: #2181b7;
   height: 350px;
-  color: white;
+  color: #ffffff;
   column-count: 3;
 }
 
@@ -352,7 +352,7 @@ footer p {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 20px #0000000a;
 }
 
 .info-icon {
@@ -652,7 +652,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(11, 10, 18, 0.9);
+  background: #0b0a12e6;
   z-index: 9999;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -666,7 +666,7 @@ footer p {
 .loader-ring {
   width: 80px;
   height: 80px;
-  border: 8px solid rgba(255, 255, 255, 0.18);
+  border: 8px solid #ffffff2e;
   border-top-color: #e9ea89;
   border-radius: 50%;
   animation: spin 1s linear infinite;
