@@ -400,6 +400,28 @@ footer p {
     margin-right: 0;
   }
 }
+.makeContactBackground {
+ width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+}
+makeContactBackgroundBtn {
+  background-color: #b8971d;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+
 
 /*contact (only the page)*/
 .titleContact {
@@ -513,7 +535,17 @@ footer p {
 @media (max-width: 900px) {
   .contact-container { grid-template-columns: 1fr; }
 }
-
+.makeContactbackbtn
+{
+  
+  background-color: #b8971d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
 
 
 

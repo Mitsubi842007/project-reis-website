@@ -77,10 +77,11 @@
     </div>
   </div>
   <!--make contact!-->
-  <div class="makeContact">
-   <a href=contact.php>contact us! </a>
+  <div class="makeContactBackground">
+    <div class="makeContactBackgroundBtn">
+      <a href=contact.php>contact us! </a>
+    </div>
   </div>
-</div>
   <!--footer -->
   <footer>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
