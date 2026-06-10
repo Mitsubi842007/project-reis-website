@@ -9,7 +9,7 @@ body {
   font-family: "futurama", sans-serif;
   /*menu */
 }
-
+ 
 .brandName {
   display: flex;
   flex-direction: row;
@@ -19,26 +19,33 @@ body {
   align-content: stretch;
   font-size: 16px;
   font-weight: 300;
+<<<<<<< Updated upstream
   color: #ffffff;
 
 
 
+=======
+  color: white;
+ 
+ 
+ 
+>>>>>>> Stashed changes
 }
-
+ 
 .brandName img {
   max-width: 60px;
   max-width: 60px;
   height: 60px;
   max-height: 60px;
 }
-
+ 
 .brandName h2 {
   font-size: 24px;
   font-weight: 500;
   margin-top: 20px;
 }
-
-
+ 
+ 
 footer {
   max-width: 100%;
   max-width: 100%;
@@ -53,7 +60,7 @@ footer {
   color: white;
   column-count: 2;
 }
-
+ 
 footer p {
   font-size: 15px;
   font-weight: 500;
@@ -157,20 +164,20 @@ footer p {
   color: #ffffff;
   column-count: 3;
 }
-
+ 
 .darkBackground h1 {
   font-size: 62px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-
+ 
 .darkBackground p {
   font-size: 25px;
   font-weight: 400;
   width: 80%;
   text-align: center;
 }
-
+ 
 .booking-btn {
   background-color: #b8971d;
   color: #ffffff;
@@ -191,7 +198,7 @@ footer p {
   color: white;
   transform: translateY(-2px);
 }
-
+ 
 /*background 2 (white) */
 .whiteBackground {
   width: 100%;
@@ -200,7 +207,7 @@ footer p {
   text-align: center;
   padding-top: 50px;
 }
-
+ 
 .whiteBackground p {
   color: #787676;
   font-size: 18px;
@@ -210,23 +217,23 @@ footer p {
   margin-bottom: 50px;
   line-height: 2;
 }
-
+ 
 .whiteBackground h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 70px;
 }
-
+ 
 .features {
   display: flex;
   justify-content: center;
   gap: 100px;
 }
-
+ 
 .card {
   width: 300px;
 }
-
+ 
 .imagePictogram1 {
   width: 100px;
   height: 100px;
@@ -240,24 +247,24 @@ footer p {
   margin: auto;
   margin-bottom: 30px;
 }
-
+ 
 .imagePictogram1 img {
   width: 220px;
   height: 220px;
   object-fit: cover;
   border-radius: 50%;
 }
-
+ 
 .card h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-
+ 
 .card p {
   font-size: 17px;
   line-height: 1.6;
 }
-
+ 
 /*background 3 (blue) */
 .blueBackground {
   display: flex;
@@ -272,20 +279,20 @@ footer p {
   color: #ffffff;
   column-count: 3;
 }
-
+ 
 .blueBackground h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 15px;
 }
-
+ 
 .blueBackground p {
   font-size: 20px;
   font-weight: 400;
   width: 80%;
   text-align: center;
 }
-
+ 
 .info-btn {
   background-color: #f6f6f6;
   color: #2181b7;
@@ -300,13 +307,13 @@ footer p {
   text-decoration: none;
   margin-top: 30px;
 }
-
+ 
 .info-btn:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   transform: translateY(-2px);
 }
-
+ 
 /*informatie (only the page)*/
 .whiteBackground2 {
   width: 100%;
@@ -314,9 +321,9 @@ footer p {
   background-color: #ffffff;
   text-align: center;
   padding-top: 50px;
-
+ 
 }
-
+ 
 .whiteBackground2 p {
   color: #787676;
   font-size: 18px;
@@ -325,16 +332,27 @@ footer p {
   margin: auto;
   margin-bottom: 50px;
   line-height: 1.5;
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 }
-
+ 
 .whiteBackground2 h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 70px;
 
 }
+<<<<<<< HEAD
+ 
+=======
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> bbc0f8e989dae52eb90aaf627dc788a2cfd75e99
+>>>>>>> Stashed changes
 .info-cards {
   max-width: 1100px;
   margin: 40px auto 60px;
@@ -343,7 +361,7 @@ footer p {
   gap: 24px;
   padding: 0 20px;
 }
-
+ 
 .info-card {
   background: #ffffff;
   border: 1px solid #a9a7a7;
@@ -354,7 +372,7 @@ footer p {
   align-items: flex-start;
   box-shadow: 0 8px 20px #0000000a;
 }
-
+ 
 .info-icon {
   width: 80px;
   height: 80px;
@@ -363,46 +381,65 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-
+ 
 .info-icon img {
   width: 64px;
   height: 64px;
   object-fit: contain;
 }
-
+ 
 .info-content {
   flex: 1 1 auto;
 }
-
+ 
 .info-title {
   font-size: 18px;
   font-weight: 700;
   color: #222222;
   margin-bottom: 8px;
 }
-
+ 
 .info-desc {
   color: #6f6f6f;
   font-size: 15px;
   line-height: 1.7;
 }
-
+ 
 @media (max-width: 900px) {
   .info-cards {
     grid-template-columns: 1fr;
   }
-
+ 
   .whiteBackground2 h1 {
     margin-right: 0;
   }
-
+ 
   .whiteBackground2 p {
     margin-right: 0;
   }
 }
+<<<<<<< HEAD
+ 
+.bookNow {}
+ 
+ 
+ 
+ 
+/*boeking (only the page)*/
+ 
+ 
+ 
+=======
+.bookNow {
 
+  
+}
+
+<<<<<<< Updated upstream
 .bookNow {}
 
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -410,6 +447,10 @@ footer p {
 
 
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> bbc0f8e989dae52eb90aaf627dc788a2cfd75e99
+>>>>>>> Stashed changes
 /* LOGIN */
 .login-wrapper {
   background-color: #2181b7;
@@ -419,7 +460,11 @@ footer p {
   min-height: calc(100vh - 160px);
   padding: 40px 0;
 }
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 .login-card {
   background-color: white;
   border-radius: 20px;
@@ -427,7 +472,11 @@ footer p {
   width: 350px;
   text-align: center;
 }
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 .login-logo {
   background-color: #b8952a;
   border-radius: 50%;
@@ -437,23 +486,39 @@ footer p {
   line-height: 70px;
   margin: 0 auto 20px;
 }
+<<<<<<< Updated upstream
 
 .login-card h1 {
   margin-bottom: 8px;
 }
 
+=======
+ 
+.login-card h1 {
+  margin-bottom: 8px;
+}
+ 
+>>>>>>> Stashed changes
 .login-card p {
   color: gray;
   margin-bottom: 20px;
 }
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 .login-card label {
   display: block;
   text-align: left;
   font-weight: bold;
   margin-bottom: 5px;
 }
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 .login-card input {
   width: 100%;
   padding: 10px;
@@ -463,9 +528,15 @@ footer p {
   background-color: #f2f2f2;
   font-size: 15px;
 }
+<<<<<<< Updated upstream
 
 
 
+=======
+ 
+ 
+ 
+>>>>>>> Stashed changes
 .login-card button {
   width: 100%;
   padding: 12px;
@@ -477,11 +548,16 @@ footer p {
   cursor: pointer;
   margin-bottom: 15px;
 }
+<<<<<<< Updated upstream
 
+=======
+ 
+>>>>>>> Stashed changes
 .onderaan a {
   color: #b8952a;
   text-decoration: none;
 }
+<<<<<<< Updated upstream
 
 /* ADMIN */
 
@@ -570,17 +646,30 @@ footer p {
 
 
 /*algemene voorwaarden (only the page)*/
+=======
+ 
+/* ADMIN */
+ 
+<<<<<<< HEAD
+ 
+ 
+/* ALGEMENE VOORWAARDEN */
+=======
+
+
+/* ALGEMENE VOORWAARDEN */
+>>>>>>> Stashed changes
 .conditions-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 40px;
   background-color: white;
 }
-
+ 
 .conditions-section {
   margin-bottom: 40px;
 }
-
+ 
 .conditions-section h2 {
   color: #b8971d;
   font-size: 24px;
@@ -588,26 +677,26 @@ footer p {
   border-bottom: 2px solid #b89417;
   padding-bottom: 10px;
 }
-
+ 
 .conditions-section p {
   color: #333;
   line-height: 1.8;
   margin-bottom: 15px;
   font-size: 15px;
 }
-
+ 
 .conditions-section ul {
   margin-left: 20px;
   margin-bottom: 15px;
 }
-
+ 
 .conditions-section li {
   color: #333;
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 15px;
 }
-
+ 
 .highlight {
   background-color: #e9ea89;
   padding: 15px;
@@ -615,7 +704,7 @@ footer p {
   margin: 20px 0;
   border-radius: 4px;
 }
-
+ 
 .header-conditions {
   background-color: #b8971d;
   color: white;
@@ -623,17 +712,17 @@ footer p {
   text-align: center;
   margin-bottom: 30px;
 }
-
+ 
 .header-conditions h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
-
+ 
 .header-conditions p {
   font-size: 16px;
   opacity: 0.95;
 }
-
+ 
 .back-button {
   display: inline-block;
   background-color: #b8971d;
@@ -644,6 +733,7 @@ footer p {
   font-size: 16px;
   margin-top: 20px;
 }
+<<<<<<< Updated upstream
 
 /*pagina lader*/
 #page-loader {
@@ -676,4 +766,169 @@ footer p {
   to {
     transform: rotate(360deg);
   }
+=======
+/*admin (only the page)*/
+
+
+
+
+
+/*algemene voorwaarden (only the page)*/
+>>>>>>> bbc0f8e989dae52eb90aaf627dc788a2cfd75e99
+.conditions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: white;
+}
+ 
+.conditions-section {
+  margin-bottom: 40px;
+}
+ 
+.conditions-section h2 {
+  color: #b8971d;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b89417;
+  padding-bottom: 10px;
+}
+ 
+.conditions-section p {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+ 
+.conditions-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+ 
+.conditions-section li {
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+ 
+.highlight {
+  background-color: #e9ea89;
+  padding: 15px;
+  border-left: 4px solid #b8971d;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+ 
+.header-conditions {
+  background-color: #b8971d;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+.header-conditions h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+ 
+.header-conditions p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+ 
+.back-button {
+  display: inline-block;
+  background-color: #b8971d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
+ 
+/*admin (only the page)*/
+ 
+ 
+ 
+ 
+ 
+/*algemene voorwaarden (only the page)*/
+.conditions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: white;
+}
+ 
+.conditions-section {
+  margin-bottom: 40px;
+}
+ 
+.conditions-section h2 {
+  color: #b8971d;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b89417;
+  padding-bottom: 10px;
+}
+ 
+.conditions-section p {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+ 
+.conditions-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+ 
+.conditions-section li {
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+ 
+.highlight {
+  background-color: #e9ea89;
+  padding: 15px;
+  border-left: 4px solid #b8971d;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+ 
+.header-conditions {
+  background-color: #b8971d;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+.header-conditions h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+ 
+.header-conditions p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+ 
+.back-button {
+  display: inline-block;
+  background-color: #b8971d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+>>>>>>> Stashed changes
 }
