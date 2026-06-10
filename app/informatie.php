@@ -32,7 +32,7 @@
     <h1>Over Onze Sahara Tour</h1>
     <p>Onze Sahara tour is een unieke ervaring die je meeneemt door de adembenemende landschappen van tungSahara. Van de
       levendige straten van tungCity tot de oneindige zandduinen van tungMountain, elke dag brengt nieuwe wonderen. Je
-      reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in 
+      reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in
       luxe tenten.</p>
   </div>
   <div class="info-cards">
@@ -52,7 +52,7 @@
       </div>
       <div class="info-content">
         <div class="info-title">Maaltijden</div>
-        <div class="info-desc">Authentieke Marokkaanse keuken, vegetarische opties beschikbaar</div>
+        <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
       </div>
     </div>
 
@@ -76,13 +76,18 @@
       </div>
     </div>
   </div>
-  
+  <!--make contact!-->
+  <div class="makeContact">
+    <p1>test</p1>
+   <a href=contact.php>contact us! </a>
+  </div>
+</div>
   <!--footer -->
   <footer>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
- <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
