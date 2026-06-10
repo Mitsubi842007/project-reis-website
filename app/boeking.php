@@ -26,7 +26,7 @@
   </nav>
   <!--achtergrond -->
   <div class="darkBackground">
-    <h1>test</h1>
+    <h1>booking</h1>
   </div>
   <!--reserveringsformulier -->
   <!--kleine informatie balkjes -->

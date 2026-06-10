@@ -401,7 +401,7 @@ footer p {
   }
 }
 
-/*boeking (only the page)*/
+/*contact (only the page)*/
 .titleContact {
   background-color: #b8971d;
   color: white;
@@ -420,7 +420,6 @@ footer p {
   padding: 50px 40px;
 }
 
-/* Contact page layout (two column) */
 .contact-container {
   max-width: 1100px;
   margin: 0 auto 40px;
@@ -435,7 +434,7 @@ footer p {
   background: #ffffff;
   padding: 28px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px #0000000f;
 }
 
 .contact-form label {
@@ -523,7 +522,7 @@ footer p {
 
 
 
-/* LOGIN */
+/* LOGIN page (only the page) */
 .login-wrapper {
   background-color: #2181b7;
   display: flex;
@@ -596,18 +595,7 @@ footer p {
   text-decoration: none;
 }
 
-
-
-
-
-/* ALGEMENE VOORWAARDEN */
-
-
 /*admin (only the page)*/
-
-
-
-
 
 /*algemene voorwaarden (only the page)*/
 .conditions-container {
