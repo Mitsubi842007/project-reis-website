@@ -78,7 +78,6 @@
   </div>
   <!--make contact!-->
   <div class="makeContact">
-    <p1>test</p1>
    <a href=contact.php>contact us! </a>
   </div>
 </div>
