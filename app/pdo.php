@@ -1,7 +1,7 @@
 <?php
 $host = "db";
 $db = "mydatabase";
-$email = "email";
+$user = "user";
 $password = "password";
 $charset = "utf8mb4";
 
@@ -12,9 +12,9 @@ $opties = [
 ];
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-
+// probeert te verbinden met de database
 try {
-    $pdo = new PDO($dsn, $email, $password,);
+    $pdo = new PDO($dsn, $user, $password, $opties);
 } catch (PDOException $e) {
-    die("kan de database niet connecten");
+    die("kan de database niet connecten: " . $e->getMessage());
 }

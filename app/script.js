@@ -10,11 +10,14 @@
   }
 
   const loader = createLoader();
+  //er word een laadscherm gemaakt door de code 
 
   window.addEventListener("load", function () {
     if (!loader) {
       return;
+          //De code wacht totdat de hele website klaar is met laden.
     }
+    //stel hij is geladen dan gaat die langzaam weg 
     loader.classList.add("loaded");
     setTimeout(function () {
       if (loader.parentNode) {
