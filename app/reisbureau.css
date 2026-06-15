@@ -400,13 +400,15 @@ footer p {
     margin-right: 0;
   }
 }
+
 .makeContactBackground {
- width: 100%;
+  width: 100%;
   height: 120px;
   background-color: #ffffff;
   text-align: center;
   padding-top: 50px;
 }
+
 makeContactBackgroundBtn {
   background-color: #b8971d;
   color: #ffffff;
@@ -467,7 +469,9 @@ makeContactBackgroundBtn {
   font-size: 14px;
 }
 
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
   width: 100%;
   padding: 12px 14px;
   border-radius: 8px;
@@ -520,7 +524,7 @@ makeContactBackgroundBtn {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,11 +537,13 @@ makeContactBackgroundBtn {
 }
 
 @media (max-width: 900px) {
-  .contact-container { grid-template-columns: 1fr; }
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
 }
-.makeContactbackbtn
-{
-  
+
+.makeContactbackbtn {
+
   background-color: #b8971d;
   color: white;
   padding: 12px 24px;
@@ -551,8 +557,342 @@ makeContactBackgroundBtn {
 
 
 /*boeking (only the page)*/
+.whiteBackground3 {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 60px;
+}
 
+.whiteBackground3 img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
 
+.booking-page .page-header {
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.booking-page .page-header h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.booking-page .page-header p {
+  color: #555;
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.trip-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fdfdfd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.trip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.trip-card input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.trip-card .trip-image {
+  height: 170px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.trip-card .trip-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trip-card .trip-info {
+  padding: 22px 20px 18px;
+  text-align: left;
+}
+
+.trip-card h3 {
+  margin: 0 0 8px;
+  color: #1d1d1d;
+}
+
+.trip-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+  min-height: 56px;
+}
+
+.trip-price {
+  color: #b8971d;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.trip-card::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.trip-card input[type="checkbox"]+.trip-image,
+.trip-card input[type="checkbox"]+.trip-image+.trip-info {
+  position: relative;
+  z-index: 1;
+}
+
+.trip-card input[type="checkbox"]:checked+.trip-image {
+  outline: 4px solid rgba(184, 151, 29, 0.35);
+}
+
+.booking-form {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.booking-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: end;
+  margin-top: 30px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.field-group input {
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+.booking-btn {
+  width: 100%;
+  padding: 18px 20px;
+  background-color: #b8971d;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.booking-btn:hover {
+  background-color: #a47f18;
+}
+
+.booking-errors,
+.booking-success {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.booking-errors {
+  background-color: #ffe7e7;
+  color: #8b1b1b;
+  border: 1px solid #f1c3c3;
+}
+
+.booking-errors ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.booking-success {
+  background-color: #eef7ea;
+  color: #256029;
+  border: 1px solid #c8e2c7;
+}
+
+@media (max-width: 760px) {
+  .booking-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+.booking-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 60px 30px;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-header h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 16px;
+}
+
+.booking-header p {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #5c5c5c;
+  line-height: 1.8;
+}
+
+.booking-grid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.activity-card {
+  float: left;
+  width: 520px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border: 1px solid #e0d9b3;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px #bbbbbb;
+
+}
+
+.activity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 45px #999999;
+}
+
+.booking-grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card-image {
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 240px;
+  display: block;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.checkbox-container {
+  display: block;
+}
+
+.activity-checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  margin-top: 6px;
+  float: left;
+}
+
+.checkbox-text {
+  display: block;
+  overflow: hidden;
+}
+
+.checkbox-text h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1e1e1e;
+}
+
+.checkbox-text p {
+  color: #6a6a6a;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reisInfo {
+  margin-top: 18px;
+  color: #5f5f5f;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.reisInfo span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #b8971d;
+}
+
+@media (max-width: 900px) {
+  .activity-card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .booking-section {
+    padding: 40px 20px;
+  }
+
+  .booking-header h1 {
+    font-size: 32px;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+}
 
 /* LOGIN page (only the page) */
 .login-wrapper {
