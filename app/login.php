@@ -86,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
   <script src="script.js"></script>
+  
 
 </body>
 

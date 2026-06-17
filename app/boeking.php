@@ -29,6 +29,7 @@
     <h1>
       Boek Je Avontuur</h1>
   </div>
+  <!--searchBar-->
   <!--reserveringsformulier -->
   <section class="booking-section">
     <div class="booking-header">
@@ -48,7 +49,7 @@
             <div class="checkbox-text">
               <!--beschrijving -->
               <h2>Classic Sahara Experience</h2>
-              <p>5-daagse tour door de highlights van de Marokkaanse Sahara.</p>
+              <p>5-daagse tour door de highlights van de tungSahara.</p>
             </div>
           </label>
           <div class="reisInfo">
@@ -68,6 +69,7 @@
       <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
     </footer>
     <script src="script.js"></script>
+   
 
 </body>
 
