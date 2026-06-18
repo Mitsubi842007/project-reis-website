@@ -2,40 +2,44 @@
 
 session_start();
 
-
-
-if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] === true) {
-    header('Location: index.php');
+if (isset($_SESSION['ingelogd'])) {
+    header("Location: index.php");
     exit;
 }
 
+include 'pdo.php';
 
-require_once 'pdo.php';
+$foutmelding = "";
 
-$foutmelding = '';
+if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
 
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $wachtwoord = $_POST['wachtwoord'];
 
-    
-    $stmt = $pdo->prepare("SELECT * FROM Account WHERE email = :email");
-    $stmt->execute([':email' => $email]);
-    $gebruiker = $stmt->fetch(PDO::FETCH_ASSOC);
+    $sql = "SELECT * FROM Account WHERE email = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$email]);
 
-    
-    if ($gebruiker && password_verify($wachtwoord, $gebruiker['password'])) {
-        
-        $_SESSION['ingelogd'] = true;
-        $_SESSION['email'] = $gebruiker['email'];
-        header('Location: index.php');
-        exit;
+    $gebruiker = $stmt->fetch();
+
+    if ($gebruiker) {
+
+        if (password_verify($wachtwoord, $gebruiker['password'])) {
+
+            $_SESSION['ingelogd'] = true;
+            $_SESSION['email'] = $gebruiker['email'];
+
+            header("Location: index.php");
+            exit;
+        } else {
+            $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
+        }
+
     } else {
-        $foutmelding = 'Gebruikersnaam of wachtwoord is onjuist.';
+        $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
     }
 }
-?>  
+?>   
 <!DOCTYPE html>
 <html lang="en">
 <head>
