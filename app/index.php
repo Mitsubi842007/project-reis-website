@@ -9,11 +9,6 @@
 </head>
 
 <body>
-  <script>
-
-
-
-  </script>
   <!--navigation menu-->
   <nav class="navbar">
     <div class="brandName">
@@ -80,7 +75,7 @@
     <h1>Klaar voor het Avontuur?</h1>
     <p>Laat je meevoeren door de rust en schoonheid van de Sahara. Boek vandaag nog je reis.</p>
     <a href="informatie.php" class="info-btn">meer informatie</a>
-</div>
+  </div>
 
   </div>
   </div>
@@ -89,6 +84,7 @@
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
+  <script src="script.js"></script>
   </div>
 
 </body>

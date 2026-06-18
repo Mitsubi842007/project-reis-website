@@ -10,11 +10,6 @@
 <!--navigation menu -->
 
 <body>
-  <script>
-
-
-
-  </script>
   <!--navigation menu-->
   <nav class="navbar">
     <div class="brandName">
@@ -35,10 +30,10 @@
   </div>
   <div class="whiteBackground2">
     <h1>Over Onze Sahara Tour</h1>
-    <p>Onze Sahara tour is een unieke ervaring die je meeneemt door de adembenemende landschappen van Marokko. Van de
-      levendige straten van Marrakech tot de oneindige zandduinen van Erg Chebbi, elke dag brengt nieuwe wonderen. Je
-      reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in authentieke
-      Berbertenten.</p>
+    <p>Onze Sahara tour is een unieke ervaring die je meeneemt door de adembenemende landschappen van tungSahara. Van de
+      levendige straten van tungCity tot de oneindige zandduinen van tungMountain, elke dag brengt nieuwe wonderen. Je
+      reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in
+      luxe tenten.</p>
   </div>
   <div class="info-cards">
     <div class="info-card">
@@ -57,7 +52,7 @@
       </div>
       <div class="info-content">
         <div class="info-title">Maaltijden</div>
-        <div class="info-desc">Authentieke Marokkaanse keuken, vegetarische opties beschikbaar</div>
+        <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
       </div>
     </div>
 
@@ -81,14 +76,18 @@
       </div>
     </div>
   </div>
-  <!--belangrijke stopmomenten -->
-  <!--wat te verwachten -->
+  <!--make contact!-->
+  <div class="makeContactBackground">
+    <div class="makeContactBackgroundBtn">
+      <a href=contact.php>contact us! </a>
+    </div>
+  </div>
   <!--footer -->
   <footer>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
-
+  <script src="script.js"></script>
 
 </body>
 
