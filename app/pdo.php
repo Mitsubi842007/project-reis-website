@@ -1,20 +1,27 @@
 <?php
 $host = "db";
 $db = "mydatabase";
-$user = "user";
-$password = "password";
+$user = "user";       
+$password = "password"; 
 $charset = "utf8mb4";
-
+ 
 $opties = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES => false,
 ];
-
+ 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-// probeert te verbinden met de database
+
 try {
+    
     $pdo = new PDO($dsn, $user, $password, $opties);
+    
+    
+    unset($user);
+    unset($password);
+
 } catch (PDOException $e) {
-    die("kan de database niet connecten: " . $e->getMessage());
+    die("Kan de database niet connecten: " . $e->getMessage());
 }
+?>
