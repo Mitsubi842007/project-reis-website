@@ -9,7 +9,7 @@
 </head>
 <!--navigation menu -->
 
-<body>
+<div>
   <!--navigation menu-->
   <nav class="navbar">
     <div class="brandName">
@@ -35,60 +35,77 @@
       reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in
       luxe tenten.</p>
   </div>
-  <div class="info-cards">
-    <div class="info-card">
-      <div class="info-icon">
-        <img src="afbeeldingen/kalender pictogram.png" alt="Duur">
-      </div>
-      <div class="info-content">
-        <div class="info-title">Duur</div>
-        <div class="info-desc">5 dagen / 4 nachten inclusief vervoer, accommodatie en maaltijden</div>
-      </div>
-    </div>
+  <script src="module">
+    //script met informatie
+    //kan alles erin van tekst
 
-    <div class="info-card">
-      <div class="info-icon">
-        <img src="afbeeldingen/bestek pictogram.png" alt="Maaltijden">
-      </div>
-      <div class="info-content">
-        <div class="info-title">Maaltijden</div>
-        <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
-      </div>
-    </div>
+  </script>
+  <button id="openModal">open this</button>
+  <div class="modal">
+    <div class="modal_overlay"></div>
+    <div class="modal_content"></div>
+    <h1>test</h1>
+    <p>klik overal om dit kaart te sluiten</p>
+  </div>
 
-    <div class="info-card">
-      <div class="info-icon">
-        <img src="afbeeldingen/tent pictogram.png" alt="Accommodatie">
-      </div>
-      <div class="info-content">
-        <div class="info-title">Accommodatie</div>
-        <div class="info-desc">Traditionele riads en luxe woestijnkampen met alle comfort</div>
-      </div>
-    </div>
 
-    <div class="info-card">
-      <div class="info-icon">
-        <img src="afbeeldingen/locatie 2 pictogram.png" alt="Groepsgrootte">
-      </div>
-      <div class="info-content">
-        <div class="info-title">Groepsgrootte</div>
-        <div class="info-desc">Kleine groepen van maximaal 12 personen voor een persoonlijke ervaring</div>
-      </div>
+
+
+</div>
+<div class="info-cards">
+  <div class="info-card">
+    <div class="info-icon">
+      <img src="afbeeldingen/kalender pictogram.png" alt="Duur">
+    </div>
+    <div class="info-content">
+      <div class="info-title">Duur</div>
+      <div class="info-desc">5 dagen / 4 nachten inclusief vervoer, accommodatie en maaltijden</div>
     </div>
   </div>
-  <!--make contact!-->
-  <div class="makeContactBackground">
-    <div class="makeContactBackgroundBtn">
-      <a href=contact.php>contact us! </a>
+
+  <div class="info-card">
+    <div class="info-icon">
+      <img src="afbeeldingen/bestek pictogram.png" alt="Maaltijden">
+    </div>
+    <div class="info-content">
+      <div class="info-title">Maaltijden</div>
+      <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
     </div>
   </div>
-  <!--footer -->
-  <footer>
-    <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
-    <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
-  </footer>
-  <script src="script.js"></script>
-  
+
+  <div class="info-card">
+    <div class="info-icon">
+      <img src="afbeeldingen/tent pictogram.png" alt="Accommodatie">
+    </div>
+    <div class="info-content">
+      <div class="info-title">Accommodatie</div>
+      <div class="info-desc">Traditionele riads en luxe woestijnkampen met alle comfort</div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-icon">
+      <img src="afbeeldingen/locatie 2 pictogram.png" alt="Groepsgrootte">
+    </div>
+    <div class="info-content">
+      <div class="info-title">Groepsgrootte</div>
+      <div class="info-desc">Kleine groepen van maximaal 12 personen voor een persoonlijke ervaring</div>
+    </div>
+  </div>
+</div>
+<!--make contact!-->
+<div class="makeContactBackground">
+  <div class="makeContactBackgroundBtn">
+    <a href=contact.php>contact us! </a>
+  </div>
+</div>
+<!--footer -->
+<footer>
+  <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
+  <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
+</footer>
+<script src="script.js"></script>
+
 </body>
 
 </html>

@@ -1143,7 +1143,7 @@ makeContactBackgroundBtn {
 
   .nav-menu a {
     font-size: 13px;
-  
+
   }
 
   .navbar {
@@ -1151,7 +1151,7 @@ makeContactBackgroundBtn {
     width: 425px;
   }
 
-  
+
 
   .login-btn {
     padding: 12px 20px;
@@ -1166,12 +1166,12 @@ makeContactBackgroundBtn {
   .brandName img {
     width: 30px;
     height: 30px;
-     margin-top: 10px;
+    margin-top: 10px;
   }
 
   .brandName h2 {
     font-size: 15px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1216,12 +1216,12 @@ makeContactBackgroundBtn {
 
   .card h2 {
     font-size: 15px;
-     margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .card p {
     font-size: 12px;
-     margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .imagePictogram1 img {
@@ -1235,16 +1235,18 @@ makeContactBackgroundBtn {
     height: auto;
     padding: 40px 20px;
     column-count: 1;
-   
+
 
   }
-.blueBackground h1 {
+
+  .blueBackground h1 {
     font-size: 16px;
   }
 
   .blueBackground p {
     font-size: 11px;
   }
+
   .footer p {
     width: 100%;
     height: auto;
@@ -1252,3 +1254,35 @@ makeContactBackgroundBtn {
     column-count: 1;
   }
 }
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {}
+
+button {
+  margin-top: 20px;
+  background-color: yellow;
+  color: white;
+  padding: 12px 24px;
+  border: 0;
+  box-shadow: 0 4px 6px #0000001a;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e9ea89;
+  color: white;
+  transform: translateY(-2px);
+}
+
+openModal {}
