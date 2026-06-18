@@ -35,17 +35,20 @@
       reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in
       luxe tenten.</p>
   </div>
-  <script src="module">
-    //script met informatie
-    //kan alles erin van tekst
-
-  </script>
+  <script src="module.js"></script>
   <button id="openModal">open this</button>
   <div class="modal">
-    <div class="modal_overlay"></div>
-    <div class="modal_content"></div>
-    <h1>test</h1>
-    <p>klik overal om dit kaart te sluiten</p>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h1>onze contact info</h1>
+       <br>
+      <p>onze nummer is +21345678912</p>
+      <p>onze email is test.9673@gmail.com !</p>
+       <br>
+      <p>maar je kan ook de contact pagina gebruiken om ons te mailen.</p>
+       <br>
+      <p><strong> klik overal om dit kaart te sluiten</strong></p>
+    </div>
   </div>
 
 
