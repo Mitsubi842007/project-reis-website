@@ -15,6 +15,11 @@
       <img src="afbeeldingen/palm boom logo.png" alt="Logo">
       <h2>TungSahara Admin</h2>
     </div>
+    <button type="button" class="hamburger-button" aria-label="Menu openen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="nav-menu">
       <a href="index.php">Home</a>
       <a href="informatie.php">Information</a>
@@ -34,6 +39,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="hamburger.js"></script>
 </body>
 
 </html>

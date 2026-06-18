@@ -102,6 +102,8 @@ if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
     <a href="algemeneVoorwaarden.php">Algemene voorwaarden</a>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
   </footer>
+  <script src="script.js"></script>
+  
 
 </body>
 </html> 
