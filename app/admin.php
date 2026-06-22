@@ -1,3 +1,32 @@
+<?php
+session_start();
+require_once("pdo.php");
+ 
+// Check if user is logged in
+if (!isset($_SESSION["email"])) {
+    header("Location: login.php");
+    exit();
+}
+ 
+// Check if user is an admin
+$sql = "SELECT * FROM Account WHERE email = :email";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([":email" => $_SESSION["email"]]);
+$user = $stmt->fetch();
+ 
+if (!$user || $user["usertype"] !== "admin") {
+    header("Location: login.php");
+    exit();
+}
+ 
+// Fetch reizen
+$sql = "SELECT * FROM reizen"; 
+$stmt = $pdo->query($sql);
+$reizen = $stmt->fetchAll();           
+?>
+ 
+
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -15,11 +44,6 @@
       <img src="afbeeldingen/palm boom logo.png" alt="Logo">
       <h2>TungSahara Admin</h2>
     </div>
-    <button type="button" class="hamburger-button" aria-label="Menu openen" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
     <div class="nav-menu">
       <a href="index.php">Home</a>
       <a href="informatie.php">Information</a>
@@ -39,7 +63,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="hamburger.js"></script>
+  
 </body>
 
 </html>

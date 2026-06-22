@@ -1,3 +1,16 @@
+<?php
+include 'pdo.php';
+$sql = "SELECT * FROM reviews";
+$stmt = $pdo->query($sql);
+while ($review = $stmt->fetch()) {
+?>
+<div class="review">
+<h3><?php echo $review['naam']; ?></h3>
+<p><?php echo $review['review']; ?></p>
+</div>
+<?php } ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,8 +49,7 @@
       luxe tenten.</p>
   </div>
   <script src="module">
-    //script met informatie
-    //kan alles erin van tekst
+    
 
   </script>
   <button id="openModal">open this</button>

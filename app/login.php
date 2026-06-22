@@ -1,45 +1,39 @@
+
 <?php
-
+ 
 session_start();
-
-if (isset($_SESSION['ingelogd'])) {
-    header("Location: index.php");
-    exit;
-}
-
-include 'pdo.php';
-
-$foutmelding = "";
-
-if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
-
-    $email = $_POST['email'];
-    $wachtwoord = $_POST['wachtwoord'];
-
-    $sql = "SELECT * FROM Account WHERE email = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$email]);
-
-    $gebruiker = $stmt->fetch();
-
-    if ($gebruiker) {
-
-        if (password_verify($wachtwoord, $gebruiker['password'])) {
-
-            $_SESSION['ingelogd'] = true;
-            $_SESSION['email'] = $gebruiker['email'];
-
-            header("Location: index.php");
-            exit;
-        } else {
-            $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
-        }
-
-    } else {
-        $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
+include("pdo.php");
+ 
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+ 
+    $sql="SELECT * FROM Account WHERE email=:email AND password=:password";
+   
+    $statement=$pdo->prepare($sql);
+    $statement->execute([":email"=>$email, ":password"=>$password]);
+    $row=$statement->fetch();
+ 
+    if($row["usertype"]=="gebruiker")
+    {  
+        $_SESSION["gebruiker"]=$gebruiker;
+        header("location:index.php");
+    }
+    elseif($row["usertype"]=="admin")
+    {
+        $_SESSION["email"]=$email;
+        header("location:admin.php");
+    }
+    else
+    {
+        echo "email or password incorrect";
     }
 }
-?>   
+ 
+?>
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +73,7 @@ if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
 
           <label for="email">E-mailadres</label>
           
-          <input type="email" id="email" name="email" placeholder="jouw@email.nl" required />
+          <input type="email" id="email" name="email" placeholder="email" required />
 
           <label for="wachtwoord">Wachtwoord</label>
           
@@ -90,6 +84,7 @@ if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
           
 
       </form>
+       
 
       <p class="onderaan">Login met admin <a href="#">Klik hier</a></p>
       
