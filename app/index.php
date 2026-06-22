@@ -22,6 +22,7 @@
       <a href="login.php" class="login-btn ">Login</a>
     </div>
   </nav>
+  
   <!--front background-->
   <div class="darkBackground">
     <h1>
@@ -29,6 +30,12 @@
     <p>Ontdek de adembenemende schoonheid van de woestijn op een onvergetelijke kamelentocht</p>
     <a href="boeking.php" class="booking-btn">boek nu je avontuur</a>
   </div>
+    <!--searchBar-->
+<form id="searchForm" action="" method="GET">
+  <label for="q">SearchBar</label>
+  <input type="text" id="searchInput" name="q" placeholder="tip: zoek dorpje">
+  <button type="submit">Zoek</button>
+</form>
   <!--waarom tungSahara -->
   <div class="whiteBackground">
     <h1>Waarom TungSahara?</h1>

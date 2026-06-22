@@ -15,6 +15,19 @@
   $statement = $pdo->prepare($sql);
   $statement->execute();
   $reisInformatie = $statement->fetchAll();
+  // simple inline search handling: only filter when query is exactly 'dorpje' (case-insensitive)
+  $q = isset($_GET['q']) ? trim($_GET['q']) : '';
+  if ($q !== '' && mb_strtolower($q, 'UTF-8') === 'dorpje') {
+    $needle = 'dorpje';
+    $filtered = array_filter($reisInformatie, function($item) use ($needle) {
+      foreach (['titel','beschrijving','locatie'] as $field) {
+        if (!empty($item[$field]) && mb_stripos($item[$field], $needle) !== false) return true;
+      }
+      return false;
+    });
+  } else {
+    $filtered = $reisInformatie;
+  }
   ?>
 
   <!--navigation menu-->
@@ -36,13 +49,13 @@
       Boek Je Avontuur</h1>
   </div>
   <!--searchBar-->
-<form>
-<label>test        </label>
-
-
-
+  <div class="whiteBackground3 ">
+<form id="searchForm" action="" method="GET">
+  <label for="q">SearchBar</label>
+  <input type="text" id="searchInput" name="q" placeholder="tip: zoek dorpje">
+  <button type="submit">Zoek</button>
 </form>
-
+</div>
   <!--reserveringsformulier -->
   <section class="booking-section">
     <div class="booking-header">
@@ -56,12 +69,12 @@
     </div>
     <?php
 
-    if (count($reisInformatie) === 0) {
+    if (count($filtered) === 0) {
       echo '<p>Er zijn geen reizen gevonden.</p>';
     } else {
       echo '<div class="booking-grid">';
 
-      foreach ($reisInformatie as $info) {
+      foreach ($filtered as $info) {
         $titel = htmlspecialchars($info["titel"]);
         $beschrijving = htmlspecialchars($info["beschrijving"]);
         $prijs = htmlspecialchars($info["prijs"]);
@@ -104,3 +117,5 @@
 </body>
 
 </html>
+
+
