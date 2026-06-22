@@ -1,44 +1,35 @@
 <?php
 
 session_start();
+include("pdo.php");
 
-if (isset($_SESSION['ingelogd'])) {
-    header("Location: index.php");
-    exit;
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+	$email=$_POST["email"];
+	$password=$_POST["password"];
+
+	$sql="SELECT * FROM login WHERE email=:email AND password=:password";
+	
+	$statement=$pdo->prepare($sql);
+	$statement->execute([":email"=>$email, ":password"=>$password]);
+	$row=$statement->fetch();
+
+	if($row["usertype"]=="user")
+	{	
+		$_SESSION["username"]=$username;
+		header("location:menupage.php");
+	}
+	elseif($row["usertype"]=="admin")
+	{
+		$_SESSION["email"]=$email;
+		header("location:admin.php");
+	}
+	else
+	{
+		echo "email or password incorrect";
+	}
 }
 
-include 'pdo.php';
-
-$foutmelding = "";
-
-if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
-
-    $email = $_POST['email'];
-    $wachtwoord = $_POST['wachtwoord'];
-
-    $sql = "SELECT * FROM Account WHERE email = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$email]);
-
-    $gebruiker = $stmt->fetch();
-
-    if ($gebruiker) {
-
-        if (password_verify($wachtwoord, $gebruiker['password'])) {
-
-            $_SESSION['ingelogd'] = true;
-            $_SESSION['email'] = $gebruiker['email'];
-
-            header("Location: index.php");
-            exit;
-        } else {
-            $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
-        }
-
-    } else {
-        $foutmelding = "Gebruikersnaam of wachtwoord is onjuist.";
-    }
-}
 ?>   
 <!DOCTYPE html>
 <html lang="en">
@@ -79,7 +70,7 @@ if (isset($_POST['email']) && isset($_POST['wachtwoord'])) {
 
           <label for="email">E-mailadres</label>
           
-          <input type="email" id="email" name="email" placeholder="jouw@email.nl" required />
+          <input type="text" id="email" name="email" placeholder="jouw@email.nl"  />
 
           <label for="wachtwoord">Wachtwoord</label>
           

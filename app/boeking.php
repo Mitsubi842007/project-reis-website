@@ -9,7 +9,13 @@
 </head>
 
 <body>
-
+  <?php
+  include 'pdo.php';
+  $sql = "SELECT * FROM reisInformatie";
+  $statement = $pdo->prepare($sql);
+  $statement->execute();
+  $reisInformatie = $statement->fetchAll();
+  ?>
 
   <!--navigation menu-->
   <nav class="navbar">
@@ -30,38 +36,62 @@
       Boek Je Avontuur</h1>
   </div>
   <!--searchBar-->
+<form>
+<label>test        </label>
+
+
+
+</form>
+
   <!--reserveringsformulier -->
   <section class="booking-section">
     <div class="booking-header">
       <h1>kies je activiteiten</h1>
       <p>Selecteer één of meerdere reizen die je wilt boeken. Je kunt meerdere activiteiten combineren.</p>
     </div>
+<!--search bar-->
 
-    <div class="booking-grid">
-      <article class="activity-card">
-        <div class="card-image">
-          <img src="afbeeldingen/placeholder.png" alt="Classic Sahara Experience">
-        </div>
-        <div class="card-content">
-          <!--checkbox -->
-          <label class="checkbox-container">
-            <input type="checkbox" class="activity-checkbox">
-            <div class="checkbox-text">
-              <!--beschrijving -->
-              <h2>Classic Sahara Experience</h2>
-              <p>5-daagse tour door de highlights van de tungSahara.</p>
-            </div>
-          </label>
-          <div class="reisInfo">
-            <!--reisinformatie-->
-            <span><strong>Duurt:</strong> 5 dagen / 4 nachten</span>
-            <span><strong>Locatie:</strong> Marrakech - Merzouga</span>
-          </div>
-          <div class="price">€799 per persoon</div>
-        </div>
-      </article>
+
 
     </div>
+    <?php
+
+    if (count($reisInformatie) === 0) {
+      echo '<p>Er zijn geen reizen gevonden.</p>';
+    } else {
+      echo '<div class="booking-grid">';
+
+      foreach ($reisInformatie as $info) {
+        $titel = htmlspecialchars($info["titel"]);
+        $beschrijving = htmlspecialchars($info["beschrijving"]);
+        $prijs = htmlspecialchars($info["prijs"]);
+        $afbeelding = $info["afbeelding"] ?: "placeholder.png";
+        $locatie = htmlspecialchars($info["locatie"]);
+
+        echo '<article class="activity-card">';
+        echo '  <div class="card-image">';
+        echo '    <img src="afbeeldingen/' . htmlspecialchars($afbeelding) . '" alt="' . $titel . '">';
+        echo '  </div>';
+        echo '  <div class="card-content">';
+        echo '    <label class="checkbox-container">';
+        echo '      <input type="checkbox" class="activity-checkbox">';
+        echo '      <div class="checkbox-text">';
+        echo '        <h2>' . $titel . '</h2>';
+        echo '        <p>' . $beschrijving . '</p>';
+        echo '      </div>';
+        echo '    </label>';
+        echo '    <div class="reisInfo">';
+        echo '      <span><strong>Locatie:</strong> ' . $locatie . '</span>';
+        echo '    </div>';
+        echo '    <div class="price">€' . $prijs . ' per persoon</div>';
+        echo '  </div>';
+        echo '</article>';
+      }
+
+      echo '</div>';
+    }
+    ?>
+
 
     <!--footer -->
     <footer>
@@ -69,7 +99,7 @@
       <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
     </footer>
     <script src="script.js"></script>
-   
+
 
 </body>
 
