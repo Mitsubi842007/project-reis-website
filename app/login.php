@@ -1,4 +1,3 @@
-
 <?php
  
 session_start();
@@ -15,18 +14,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $statement->execute([":email"=>$email, ":password"=>$password]);
     $row=$statement->fetch();
  
-    if($row["usertype"]=="gebruiker")
-    {  
-        $_SESSION["gebruiker"]=$gebruiker;
-        header("location:index.php");
-    }
-    elseif($row["usertype"]=="admin")
-    {
-        $_SESSION["email"]=$email;
-        header("location:admin.php");
-    }
-    else
-    {
+    if($row) {  
+        $_SESSION["email"]=$row["email"];
+        $_SESSION["usertype"]=$row["usertype"];
+        if($row["usertype"]=="admin") {
+            header("location:admin.php");
+        } else {
+            header("location:index.php");
+        }
+    } else {
         echo "email or password incorrect";
     }
 }
@@ -73,11 +69,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
           <label for="email">E-mailadres</label>
           
-          <input type="email" id="email" name="email" placeholder="email" required />
+          <input type="text" id="email" name="email" placeholder="email" required />
 
-          <label for="wachtwoord">Wachtwoord</label>
+          <label for="password">Wachtwoord</label>
           
-          <input type="password" id="wachtwoord" name="wachtwoord" required />
+          <input type="password" id="password" name="password" required />
           
           
           <button type="submit">Inloggen</button>
