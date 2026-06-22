@@ -9,13 +9,13 @@
 </head>
 
 <body>
-<?php
-include 'pdo.php';
-$sql = "SELECT * FROM reisInformatie";
-$statement = $pdo->prepare($sql);
-$statement->execute();
-$reisInformatie = $statement->fetchAll();
-?>
+  <?php
+  include 'pdo.php';
+  $sql = "SELECT * FROM reisInformatie";
+  $statement = $pdo->prepare($sql);
+  $statement->execute();
+  $reisInformatie = $statement->fetchAll();
+  ?>
 
   <!--navigation menu-->
   <nav class="navbar">
@@ -36,21 +36,32 @@ $reisInformatie = $statement->fetchAll();
       Boek Je Avontuur</h1>
   </div>
   <!--searchBar-->
+<form>
+<label>test        </label>
+
+
+
+</form>
+
   <!--reserveringsformulier -->
   <section class="booking-section">
     <div class="booking-header">
       <h1>kies je activiteiten</h1>
       <p>Selecteer één of meerdere reizen die je wilt boeken. Je kunt meerdere activiteiten combineren.</p>
     </div>
+<!--search bar-->
 
-<?php
 
-if (count($reisInformatie) === 0) {
-    echo '<p>Er zijn geen reizen gevonden.</p>';
-} else {
-    echo '<div class="booking-grid">';
 
-    foreach ($reisInformatie as $info) {
+    </div>
+    <?php
+
+    if (count($reisInformatie) === 0) {
+      echo '<p>Er zijn geen reizen gevonden.</p>';
+    } else {
+      echo '<div class="booking-grid">';
+
+      foreach ($reisInformatie as $info) {
         $titel = htmlspecialchars($info["titel"]);
         $beschrijving = htmlspecialchars($info["beschrijving"]);
         $prijs = htmlspecialchars($info["prijs"]);
@@ -75,12 +86,12 @@ if (count($reisInformatie) === 0) {
         echo '    <div class="price">€' . $prijs . ' per persoon</div>';
         echo '  </div>';
         echo '</article>';
-    }
+      }
 
-    echo '</div>';
-}
-?>
-    
+      echo '</div>';
+    }
+    ?>
+
 
     <!--footer -->
     <footer>
