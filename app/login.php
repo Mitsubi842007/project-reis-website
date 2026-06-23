@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       </form>
        
 
-      <p class="onderaan">Login met admin <a href="#">Klik hier</a></p>
+      
       
     </div>
   </div>

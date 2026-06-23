@@ -73,7 +73,7 @@ $reizen = $stmt->fetchAll();
                                 <img src="afbeeldingen/<?= htmlspecialchars($item["afbeelding"]) ?>"
                       
                             
-                            <td>
+                    
                                 <a href="editItem.php?id=<?= $item["id"] ?>" class="edit-btn">Bewerk</a>
                                 <a href="deleteItem.php?id=<?= $item["id"] ?>"
                                    class="delete-btn"
@@ -92,6 +92,7 @@ $reizen = $stmt->fetchAll();
         </table>
 
   <footer>
+    <a href="logout.php">Uitloggen</a>
     <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
     <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
   </footer>
