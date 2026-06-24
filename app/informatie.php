@@ -20,8 +20,6 @@ while ($review = $stmt->fetch()) {
   <title>information</title>
   <link rel="stylesheet" href="reisbureau.css">
 </head>
-<!--navigation menu -->
-
 <div>
   <!--navigation menu-->
   <nav class="navbar">
@@ -52,72 +50,87 @@ while ($review = $stmt->fetch()) {
     
 
   </script>
+  <script src="module.js"></script>
   <button id="openModal">open this</button>
   <div class="modal">
-    <div class="modal_overlay"></div>
-    <div class="modal_content"></div>
-    <h1>test</h1>
-    <p>klik overal om dit kaart te sluiten</p>
-  </div>
-
-
-
-
-</div>
-<div class="info-cards">
-  <div class="info-card">
-    <div class="info-icon">
-      <img src="afbeeldingen/kalender pictogram.png" alt="Duur">
-    </div>
-    <div class="info-content">
-      <div class="info-title">Duur</div>
-      <div class="info-desc">5 dagen / 4 nachten inclusief vervoer, accommodatie en maaltijden</div>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h1>onze contact info</h1>
+      <br>
+      <p>onze nummer is +21345678912</p>
+      <p>onze email is test.9673@gmail.com !</p>
+      <br>
+      <p>maar je kan ook de contact pagina gebruiken om ons te mailen.</p>
+      <br>
+      <p><strong> klik overal om dit kaart te sluiten</strong></p>
     </div>
   </div>
+  <div class="container4container">
+    <h2>Vacation Website</h2>
+    <link rel="stylesheet" href="reisbureau.css">
 
-  <div class="info-card">
-    <div class="info-icon">
-      <img src="afbeeldingen/bestek pictogram.png" alt="Maaltijden">
+
+    <h2>Travel Quote</h2>
+    <p id="quote">Click the button for a quote!</p>
+    <button id="quoteBtn">New Quote</button>
+
+    <script src="randomQuotes.js"></script>
+  </div>
+  <div class="info-cards">
+    <div class="info-card">
+      <div class="info-icon">
+        <img src="afbeeldingen/kalender pictogram.png" alt="Duur">
+      </div>
+      <div class="info-content">
+        <div class="info-title">Duur</div>
+        <div class="info-desc">5 dagen / 4 nachten inclusief vervoer, accommodatie en maaltijden</div>
+      </div>
     </div>
-    <div class="info-content">
-      <div class="info-title">Maaltijden</div>
-      <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
+
+    <div class="info-card">
+      <div class="info-icon">
+        <img src="afbeeldingen/bestek pictogram.png" alt="Maaltijden">
+      </div>
+      <div class="info-content">
+        <div class="info-title">Maaltijden</div>
+        <div class="info-desc">Authentieke tungsaharaans keuken, vegetarische opties beschikbaar</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-icon">
+        <img src="afbeeldingen/tent pictogram.png" alt="Accommodatie">
+      </div>
+      <div class="info-content">
+        <div class="info-title">Accommodatie</div>
+        <div class="info-desc">Traditionele riads en luxe woestijnkampen met alle comfort</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-icon">
+        <img src="afbeeldingen/locatie 2 pictogram.png" alt="Groepsgrootte">
+      </div>
+      <div class="info-content">
+        <div class="info-title">Groepsgrootte</div>
+        <div class="info-desc">Kleine groepen van maximaal 12 personen voor een persoonlijke ervaring</div>
+      </div>
     </div>
   </div>
-
-  <div class="info-card">
-    <div class="info-icon">
-      <img src="afbeeldingen/tent pictogram.png" alt="Accommodatie">
-    </div>
-    <div class="info-content">
-      <div class="info-title">Accommodatie</div>
-      <div class="info-desc">Traditionele riads en luxe woestijnkampen met alle comfort</div>
+  <!--make contact!-->
+  <div class="makeContactBackground">
+    <div class="makeContactBackgroundBtn">
+      <a href=contact.php>contact us! </a>
     </div>
   </div>
+  <!--footer -->
+  <footer>
+    <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
+    <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
+  </footer>
+  <script src="script.js"></script>
 
-  <div class="info-card">
-    <div class="info-icon">
-      <img src="afbeeldingen/locatie 2 pictogram.png" alt="Groepsgrootte">
-    </div>
-    <div class="info-content">
-      <div class="info-title">Groepsgrootte</div>
-      <div class="info-desc">Kleine groepen van maximaal 12 personen voor een persoonlijke ervaring</div>
-    </div>
-  </div>
-</div>
-<!--make contact!-->
-<div class="makeContactBackground">
-  <div class="makeContactBackgroundBtn">
-    <a href=contact.php>contact us! </a>
-  </div>
-</div>
-<!--footer -->
-<footer>
-  <p>© 2026 TungSahara. Ontdek de magie van de Sahara.</p>
-  <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
-</footer>
-<script src="script.js"></script>
 
-</body>
+  </body>
 
 </html>
