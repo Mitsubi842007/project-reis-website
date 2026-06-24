@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>booking</title>
   <link rel="stylesheet" href="reisbureau.css">
 </head>
-
+ 
 <body>
   <?php
   include 'pdo.php';
+  $sql = "SELECT * FROM reizen";
+  $statement = $pdo->prepare($sql);
+  $statement->execute();
+  $reizen = $statement->fetchAll();
+  ?>
+ 
   $sql = "SELECT * FROM reisInformatie";
   $statement = $pdo->prepare($sql);
   $statement->execute();
@@ -49,6 +55,13 @@
       Boek Je Avontuur</h1>
   </div>
   <!--searchBar-->
+<form>
+<label>test        </label>
+ 
+ 
+ 
+</form>
+ 
   <div class="whiteBackground3 ">
 <form id="searchForm" action="" method="GET">
   <label for="q">SearchBar</label>
@@ -63,6 +76,18 @@
       <p>Selecteer één of meerdere reizen die je wilt boeken. Je kunt meerdere activiteiten combineren.</p>
     </div>
 <!--search bar-->
+ 
+ 
+ 
+    </div>
+    <?php
+ 
+    if (count($reizen) === 0) {
+      echo '<p>Er zijn geen reizen gevonden.</p>';
+    } else {
+      echo '<div class="booking-grid">';
+ 
+      foreach ($reizen as $info) {
 
 
 
@@ -80,6 +105,7 @@
         $prijs = htmlspecialchars($info["prijs"]);
         $afbeelding = $info["afbeelding"] ?: "placeholder.png";
         $locatie = htmlspecialchars($info["locatie"]);
+ 
 
         echo '<article class="activity-card">';
         echo '  <div class="card-image">';
@@ -100,6 +126,12 @@
         echo '  </div>';
         echo '</article>';
       }
+ 
+      echo '</div>';
+    }
+    ?>
+ 
+ 
 
       echo '</div>';
     }
@@ -112,6 +144,11 @@
       <a href="algemeneVoorwaarden.php">algemene voorwaarden</a>
     </footer>
     <script src="script.js"></script>
+ 
+ 
+</body>
+ 
+</html>
 
 
 </body>

@@ -1,3 +1,16 @@
+<?php
+include 'pdo.php';
+$sql = "SELECT * FROM reviews";
+$stmt = $pdo->query($sql);
+while ($review = $stmt->fetch()) {
+?>
+<div class="review">
+<h3><?php echo $review['naam']; ?></h3>
+<p><?php echo $review['review']; ?></p>
+</div>
+<?php } ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +46,10 @@
       reist met kameel, het traditionele vervoermiddel van de woestijn, en slaapt onder de sterren in
       luxe tenten.</p>
   </div>
+  <script src="module">
+    
+
+  </script>
   <script src="module.js"></script>
   <button id="openModal">open this</button>
   <div class="modal">
