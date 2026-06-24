@@ -10,6 +10,57 @@ body {
   /*menu settings */
 }
 
+/*searchBar*/
+#searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  color: #222;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.whiteBackground3 {
+  width: 100%;
+  height: 100px;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.whiteBackground3 p {
+  color: #787676;
+  font-size: 18px;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 2;
+}
+
+.whiteBackground3 h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+
+
 /*company name*/
 .brandName {
   display: flex;
@@ -39,7 +90,7 @@ body {
 /*footer settings*/
 footer {
   max-width: 100%;
-  
+
   height: 80px;
   max-height: 80px;
   background-color: #b8971d;
@@ -131,10 +182,10 @@ footer p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 1600px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 1600px;
   background-color: #000000;
-  height: 500px;
+  min-height: 500px;
   color: #ffffff;
   column-count: 3;
 }
@@ -311,18 +362,25 @@ footer p {
   color: #787676;
   font-size: 18px;
   font-weight: 200;
-  width: 50%;
+  width: min(90%, 700px);
   margin: auto;
   margin-bottom: 50px;
   line-height: 1.5;
-  
+
 }
 
 .whiteBackground2 h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 70px;
- 
+
+}
+.whiteBackground2 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-bottom: 70px;
+
 }
 
 /* Info cards (informatie.php) */
@@ -390,6 +448,12 @@ footer p {
   .whiteBackground2 p {
     margin-right: 0;
   }
+
+  .darkBackground,
+  .blueBackground {
+    column-count: 1;
+    padding: 0 20px;
+  }
 }
 
 .makeContactBackground {
@@ -400,7 +464,7 @@ footer p {
   padding-top: 50px;
 }
 
-makeContactBackgroundBtn {
+.makeContactBackgroundBtn {
   background-color: #b8971d;
   color: #ffffff;
   border: none;
@@ -1260,23 +1324,42 @@ makeContactBackgroundBtn {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10;
   height: 100%;
   display: none;
   justify-content: center;
   align-items: center;
 }
 
-.modal-overlay {}
+.modal-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+}
 
 button {
   margin-top: 20px;
   background-color: yellow;
   color: white;
   padding: 12px 24px;
-  border: 0;
+  border: none;
+  border-radius: 8px;
   box-shadow: 0 4px 6px #0000001a;
   cursor: pointer;
+  margin-left: 46%;
+
 }
 
 button:hover {
@@ -1285,4 +1368,33 @@ button:hover {
   transform: translateY(-2px);
 }
 
-openModal {}
+.modal.open {
+  display: flex;
+}
+
+.openModal {}
+
+/*quotes css*/
+.container4container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+#quoteBtn {
+  background: yellow;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#quoteBtn:hover {
+  background: #e9ea89;
+}
