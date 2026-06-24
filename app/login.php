@@ -8,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password = $_POST["password"];
 
   $sql = "SELECT * FROM login WHERE email=:email AND password=:password";
-
   $statement = $pdo->prepare($sql);
   $statement->execute([":email" => $email, ":password" => $password]);
   $row = $statement->fetch();
