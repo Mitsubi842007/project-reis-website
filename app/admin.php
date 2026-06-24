@@ -49,6 +49,12 @@ $reizen = $stmt->fetchAll();
     <p>Beheer hier je inhoud en controleer het systeem.</p>
   </div>
 
+  <div style="margin:20px;">
+    <a href="addReis.php" class="booking-btn">
+        Nieuwe reis toevoegen
+    </a>
+</div>
+
       <table class="admin-table">
             <thead>
                 <tr>
@@ -61,16 +67,19 @@ $reizen = $stmt->fetchAll();
                 </tr>
             </thead>
             <tbody>
-                <?php if ($items): ?>
-                    <?php foreach ($items as $item): ?>
+                <?php if ($reizen): ?>
+    <?php foreach ($reizen as $item): ?>
                         <tr>
                             <td><?= htmlspecialchars($item["id"]) ?></td>
                             <td><?= htmlspecialchars($item["titel"]) ?></td>
                             <td><?= htmlspecialchars($item["beschrijving"]) ?></td>
                             <td>€<?= htmlspecialchars($item["prijs"]) ?></td>
-                            <td>€<?= htmlspecialchars($item["locatie"]) ?></td>
-                            <td>
-                                <img src="afbeeldingen/<?= htmlspecialchars($item["afbeelding"]) ?>"
+                            <td><?= htmlspecialchars($item["locatie"]) ?></td>
+<td>
+    <img
+        src="afbeeldingen/<?= htmlspecialchars($item["afbeelding"]) ?>"
+        width="100"
+        alt="<?= htmlspecialchars($item["titel"]) ?>">
                       
                             
                     
@@ -90,6 +99,8 @@ $reizen = $stmt->fetchAll();
                 <?php endif; ?>
             </tbody>
         </table>
+
+        
 
   <footer>
     <a href="logout.php">Uitloggen</a>

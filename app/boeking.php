@@ -11,10 +11,10 @@
 <body>
   <?php
   include 'pdo.php';
-  $sql = "SELECT * FROM reisInformatie";
+  $sql = "SELECT * FROM reizen";
   $statement = $pdo->prepare($sql);
   $statement->execute();
-  $reisInformatie = $statement->fetchAll();
+  $reizen = $statement->fetchAll();
   ?>
  
   <!--navigation menu-->
@@ -56,12 +56,12 @@
     </div>
     <?php
  
-    if (count($reisInformatie) === 0) {
+    if (count($reizen) === 0) {
       echo '<p>Er zijn geen reizen gevonden.</p>';
     } else {
       echo '<div class="booking-grid">';
  
-      foreach ($reisInformatie as $info) {
+      foreach ($reizen as $info) {
         $titel = htmlspecialchars($info["titel"]);
         $beschrijving = htmlspecialchars($info["beschrijving"]);
         $prijs = htmlspecialchars($info["prijs"]);
