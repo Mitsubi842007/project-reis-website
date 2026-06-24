@@ -1,7 +1,35 @@
 <?php
-
+ 
 session_start();
 include("pdo.php");
+ 
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+ 
+    $sql="SELECT * FROM Account WHERE email=:email AND password=:password";
+   
+    $statement=$pdo->prepare($sql);
+    $statement->execute([":email"=>$email, ":password"=>$password]);
+    $row=$statement->fetch();
+ 
+    if($row) {  
+        $_SESSION["email"]=$row["email"];
+        $_SESSION["usertype"]=$row["usertype"];
+        if($row["usertype"]=="admin") {
+            header("location:admin.php");
+        } else {
+            header("location:index.php");
+        }
+    } else {
+        echo "email or password incorrect";
+    }
+}
+ 
+?>
+
+  
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST["email"];
@@ -63,6 +91,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       <form action="login.php" method="POST">
 
+          <label for="email">E-mailadres</label>
+          
+          <input type="text" id="email" name="email" placeholder="email" required />
+
+          <label for="password">Wachtwoord</label>
+          
+          <input type="password" id="password" name="password" required />
+          
+          
+          <button type="submit">Inloggen</button>
+          
+
+      </form>
+       
+
+      
+      
         <label for="email">E-mailadres</label>
 
         <input type="text" id="email" name="email" placeholder="jouw@email.nl" />
